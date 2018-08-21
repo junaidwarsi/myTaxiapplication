@@ -113,6 +113,7 @@ public class MainActivity extends AuthenticatedActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         mSearchView = findViewById(R.id.textSearch);
+
         mSearchView.setDropDownAnchor(R.id.searchContainer);
         mHttpClient.fetchDrivers(new HttpClient.DriverCallback() {
             @Override
